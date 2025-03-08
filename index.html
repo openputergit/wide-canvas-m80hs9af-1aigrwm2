@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenZ Finance - AI Powered Money Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f0f2f5;
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .achievement-card {
+            transition: transform 0.3s ease;
+        }
+        .achievement-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50">
+    <nav class="glassmorphism fixed w-full z-50 px-4 py-2.5">
+        <div class="flex justify-between items-center">
+            <div class="text-2xl font-bold text-purple-600">GenZ Finance</div>
+            <div class="flex items-center gap-4">
+                <span class="hidden md:inline-block px-4 py-2 bg-purple-100 rounded-full">
+                    <i class="bi bi-coin text-yellow-500"></i>
+                    <span class="ml-2">2,500 Points</span>
+                </span>
+                <div class="w-10 h-10 bg-purple-200 rounded-full flex items-center justify-center">
+                    <i class="bi bi-person-circle text-2xl text-purple-600"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20 px-4 md:px-8 max-w-7xl mx-auto">
+        <!-- AI Insights Section -->
+        <div class="glassmorphism rounded-xl p-6 mb-8">
+            <div class="flex items-center gap-4 mb-4">
+                <i class="bi bi-robot text-3xl text-purple-600"></i>
+                <div>
+                    <h2 class="text-xl font-semibold">AI Financial Assistant</h2>
+                    <p class="text-gray-600">Here's your personalized financial insight</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg p-4">
+                <p class="text-gray-700">Based on your spending patterns, you could save $150 more this month by reducing food delivery expenses. Want to set up a savings challenge? 🎯</p>
+            </div>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="glassmorphism rounded-xl p-6">
+                <h3 class="font-semibold mb-2">Monthly Budget</h3>
+                <div class="text-2xl font-bold text-purple-600">$1,200</div>
+                <div class="mt-2 bg-gray-200 rounded-full h-2">
+                    <div class="bg-purple-600 h-2 rounded-full" style="width: 70%"></div>
+                </div>
+            </div>
+            <div class="glassmorphism rounded-xl p-6">
+                <h3 class="font-semibold mb-2">Savings Goal</h3>
+                <div class="text-2xl font-bold text-green-600">$5,000</div>
+                <div class="mt-2 bg-gray-200 rounded-full h-2">
+                    <div class="bg-green-600 h-2 rounded-full" style="width: 45%"></div>
+                </div>
+            </div>
+            <div class="glassmorphism rounded-xl p-6">
+                <h3 class="font-semibold mb-2">Subscriptions</h3>
+                <div class="text-2xl font-bold text-red-600">$45/mo</div>
+                <button class="mt-2 text-purple-600 text-sm font-semibold">Optimize Now →</button>
+            </div>
+        </div>
+
+        <!-- Achievements -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Your Achievements</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="achievement-card glassmorphism rounded-xl p-4 text-center">
+                    <i class="bi bi-trophy-fill text-3xl text-yellow-500"></i>
+                    <h3 class="mt-2 font-semibold">Saving Star</h3>
+                    <p class="text-sm text-gray-600">Saved $500 this month</p>
+                </div>
+                <div class="achievement-card glassmorphism rounded-xl p-4 text-center">
+                    <i class="bi bi-graph-up text-3xl text-green-500"></i>
+                    <h3 class="mt-2 font-semibold">Budget Master</h3>
+                    <p class="text-sm text-gray-600">Under budget 3 months</p>
+                </div>
+                <div class="achievement-card glassmorphism rounded-xl p-4 text-center opacity-50">
+                    <i class="bi bi-lock text-3xl text-gray-500"></i>
+                    <h3 class="mt-2 font-semibold">Investor</h3>
+                    <p class="text-sm text-gray-600">Start investing to unlock</p>
+                </div>
+                <div class="achievement-card glassmorphism rounded-xl p-4 text-center opacity-50">
+                    <i class="bi bi-lock text-3xl text-gray-500"></i>
+                    <h3 class="mt-2 font-semibold">Money Guru</h3>
+                    <p class="text-sm text-gray-600">Complete all courses</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="fixed bottom-4 left-0 right-0 flex justify-center gap-4 px-4">
+            <button class="flex-1 md:flex-none md:w-40 bg-purple-600 text-white py-3 px-6 rounded-full font-semibold shadow-lg hover:bg-purple-700 transition">
+                <i class="bi bi-plus-lg mr-2"></i>Add Transaction
+            </button>
+            <button class="flex-1 md:flex-none md:w-40 bg-white text-purple-600 py-3 px-6 rounded-full font-semibold shadow-lg hover:bg-gray-50 transition">
+                <i class="bi bi-graph-up mr-2"></i>View Analytics
+            </button>
+        </div>
+    </main>
+
+    <script>
+        // Sample AI recommendation system
+        const transactions = [];
+        
+        function addTransaction(amount, category, date) {
+            transactions.push({ amount, category, date });
+            analyzeSpending();
+        }
+
+        function analyzeSpending() {
+            // AI analysis would go here
+            // For demo purposes, we'll just log
+            console.log('Analyzing spending patterns...');
+        }
+
+        // Achievement system
+        const achievements = {
+            savingStar: false,
+            budgetMaster: false,
+            investor: false,
+            moneyGuru: false
+        };
+
+        function checkAchievements() {
+            // Check if user meets achievement criteria
+            // Update UI accordingly
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            checkAchievements();
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
